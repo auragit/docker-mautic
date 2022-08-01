@@ -1,4 +1,3 @@
-build.sh
 test-m3-apache.yaml
 apache/build.sh
 fpm/build.sh
