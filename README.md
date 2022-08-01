@@ -89,7 +89,7 @@ You can build your own containers easily using the docker build command in the r
 
 ```
 docker build . -f apache/Dockerfile -t mautic/mautic:v4-apache
-docker build . -f fpm/Dockerfile -t mautic/mautic:v4-fpm
+docker build . -f fpm/Dockerfile -t mautic/mautic:v4-fpm-aura
 ```
 
 ## Customizing Mautic Container
