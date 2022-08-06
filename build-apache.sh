@@ -7,5 +7,5 @@ read mautic_version
 echo 'Enter release sha1:'
 read mautic_sha1
 
-docker build -f ./apache/Dockerfile -t registry.aura.ir/mautic/mautic-apache:v4-105 -t registry.aura.ir/mautic/mautic-apache:latest --build-arg MAUTIC_VERSION=$mautic_version --build-arg MAUTIC_VERSION=$mautic_sha1 .
+docker build -f ./apache/Dockerfile -t registry.aura.ir/mautic/mautic-apache:${mautic_version//./-} -t registry.aura.ir/mautic/mautic-apache:latest --build-arg MAUTIC_VERSION=$mautic_version --build-arg MAUTIC_VERSION=$mautic_sha1 .
 docker push registry.aura.ir/mautic/mautic-apache:latest
