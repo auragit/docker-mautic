@@ -1,1 +1,1 @@
-sh ./build-apache.sh
+sh ./scripts/build-apache.sh
