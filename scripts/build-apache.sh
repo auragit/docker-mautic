@@ -8,8 +8,8 @@ read mautic_version
 
 mautic_tag=$(echo $mautic_version | tr '.' -)
 
-TAG="registry.aura.ir/mautic/mautic-apache:$mautic_tag"
-LATEST="registry.aura.ir/mautic/mautic-apache:latest"
+TAG="registry2.aura.ir/mautic/mautic-apache:$mautic_tag"
+LATEST="registry2.aura.ir/mautic/mautic-apache:latest"
 
 echo 'Enter release sha1:'
 read mautic_sha1
